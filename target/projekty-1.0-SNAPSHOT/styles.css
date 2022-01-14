@@ -1,0 +1,106 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+nav
+{
+    background-color: #008080;
+    text-align: center;
+}
+
+.menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    min-height: 40px;
+    line-height: 250%;
+}
+
+.menu > li
+{
+    height: 42px;
+    display: inline-block;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 2px dashed #FFFF00;
+    vertical-align:top;
+}
+
+.menu > li .nav-element{
+    color: black;
+    text-decoration: none;
+    height: 70px;
+}
+
+.menu > li .nav-element:hover{
+    color: rgb(43, 41, 41);
+    font-weight: 900;
+}
+
+.menu > li:first-child
+{
+    border-left: 2px dashed #FFFF00;
+}
+
+.menu > li .nav-element .expandable{
+    height: 70px;
+}
+#more-links .nav-element{
+    width: 200px;
+}
+
+#knowledge .nav-element{
+    width: 180px;
+}
+
+.menu > li .nav-element .expandable-element{
+    z-index: 10;
+    border: 1px solid #2F3336;
+    border-radius: 5px;
+    background-color: #109797;
+    width: 350px;
+    position: relative;
+    right: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+}
+
+.expandable-element ul{
+    text-align: left;
+    list-style-type: none;
+}
+.expandable-element ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-element .expandable-element ul a:hover{
+    color:#FFFF00;
+}
+
+.menu > li .nav-element:hover > .expandable-element{
+    visibility: visible;
+    opacity: 1;
+}
+.p{
+    margin-top: 0px;
+}
+
+optgroup{
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    border: 1px solid green;
+}
+optgroup option{
+    margin: 1em;
+    border: 1px solid orange;
+}
