@@ -25,14 +25,11 @@ public class ServletAddStatus extends HttpServlet {
             check = "error";
             request.setAttribute("check", check);
             request.getRequestDispatcher("/WEB-INF/dodajStatus.jsp").forward(request,response);
-//            response.sendRedirect("/projekt".concat("/dodajStatus"));
         }
         else {
-            request.setAttribute("check",check);
             ProjectDAO reference = new ProjectDAO();
             reference.addProjectStatus(title);
             request.getRequestDispatcher("/WEB-INF/dodajStatus.jsp").forward(request,response);
-//            response.sendRedirect("/projekt");
         }
     }
 }
