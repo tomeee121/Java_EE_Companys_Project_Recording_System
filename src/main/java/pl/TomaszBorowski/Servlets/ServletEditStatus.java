@@ -20,6 +20,6 @@ public class ServletEditStatus extends HttpServlet {
         ref.editStatus(id,title);
         request.getRequestDispatcher("/WEB-INF/pokazStatus.jsp").forward(request,response);
 
-
     }
+
 }

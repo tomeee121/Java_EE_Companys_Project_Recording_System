@@ -17,7 +17,9 @@ public class ServletEditKind extends HttpServlet {
         Integer id = Integer.valueOf(id_rodzaj);
         ProjectDAO ref = new ProjectDAO();
         ref.editKind(id,title);
-        request.getRequestDispatcher("/WEB-INF/pokazRodzaj.jsp").forward(request,response);
+        response.sendRedirect("/projekt/pokazStatus");
+
+//        request.getRequestDispatcher("/WEB-INF/pokazRodzaj.jsp").forward(request,response);
 
 
     }

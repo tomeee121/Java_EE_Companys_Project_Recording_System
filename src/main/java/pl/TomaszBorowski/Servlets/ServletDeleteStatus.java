@@ -15,7 +15,6 @@ public class ServletDeleteStatus extends HttpServlet {
         Integer id_status = Integer.valueOf(id_status_req);
         ProjectDAO ref = new ProjectDAO();
         ref.deleteStatus(id_status);
-//        request.getRequestDispatcher("/WEB-INF/pokazStatus.jsp").forward(request,response);
         response.sendRedirect("/projekt/pokazStatus");
 
 

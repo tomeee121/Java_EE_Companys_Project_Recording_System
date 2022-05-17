@@ -27,6 +27,7 @@
                 </div>
             </div>
         </li>
+        <li><a href="${pageContext.request.contextPath}/upload" class="nav-element">Prześlij z Excel'a</a></li>
     </ul>
 </nav>
 
