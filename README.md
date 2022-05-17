@@ -6,3 +6,5 @@ Technologies used:
  * [Jakarta Server Pages](https://docs.oracle.com/javaee/5/tutorial/doc/bnajo.html) <br>
  * [javascript](https://devdocs.io/javascript/)<br>
  * [Java Jakarta EE](https://jakarta.ee/resources/)<br>
+ * [Apache POI]([https://jakarta.ee/resources/](https://poi.apache.org/)<br>
+
